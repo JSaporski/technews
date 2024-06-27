@@ -1,0 +1,24 @@
+:root {
+  --brand-color-light: hsl(213, 94%, 68%);
+  --brand-color-dark: hsl(224, 76%, 48%);
+  --bg-color: hsl(222, 47%, 11%);
+  --stroke-color: hsl(217, 33%, 17%);
+  --text-color-primary: hsl(210, 40%, 96%);
+  --text-color-secondary: hsl(213, 27%, 84%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  color: var(--text-color-primary);
+  background-color: var(--bg-color);
+}
