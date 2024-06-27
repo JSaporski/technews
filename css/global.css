@@ -1,10 +1,20 @@
 :root {
+  font-size: 62.5%;
+
   --brand-color-light: hsl(213, 94%, 68%);
   --brand-color-dark: hsl(224, 76%, 48%);
   --bg-color: hsl(222, 47%, 11%);
   --stroke-color: hsl(217, 33%, 17%);
   --text-color-primary: hsl(210, 40%, 96%);
   --text-color-secondary: hsl(213, 27%, 84%);
+
+  --font-family: 'Archivo', sans-serif;
+  --h1: 800 2.4rem/135% var(--font-family);
+  --h2: 800 1.6rem/140% var(--font-family);
+  --h3: 800 1.4rem/140% var(--font-family);
+  --text-span: 600 1.4rem/145% var(--font-family);
+  --text: 400 1.6rem/140% var(--font-family);
+  --text-sm: 400 1.4rem/160% var(--font-family);
 }
 
 * {
@@ -13,12 +23,29 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 1.6rem;
+  font: var(--text);
+  color: var(--text-color-primary);
+  background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--brand-color-light);
+}
+
 img {
   display: block;
   max-width: 100%;
 }
 
-body {
-  color: var(--text-color-primary);
-  background-color: var(--bg-color);
+h1,
+h2,
+h3 {
+  font: inherit;
 }
