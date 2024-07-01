@@ -1,0 +1,10 @@
+#weekly {
+  header {
+    justify-content: space-between;
+
+    a {
+      display: flex;
+      gap: 0.4rem;
+    }
+  }
+}
