@@ -69,3 +69,7 @@ h3 {
 .grid-flow-col {
   grid-auto-flow: column;
 }
+
+.gap-16 {
+  gap: 1.6rem;
+}

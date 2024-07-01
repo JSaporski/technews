@@ -1,0 +1,22 @@
+#featured {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'A A B C'
+    'A A D E';
+
+  div {
+    img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.4rem;
+    }
+  }
+
+  div:first-child {
+    grid-area: A;
+  }
+
+  div:nth-child(3) {
+    grid-area: C;
+  }
+}
