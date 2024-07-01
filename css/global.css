@@ -93,6 +93,10 @@ main {
   font: var(--h3);
 }
 
+.text-span {
+  font: var(--text-span);
+}
+
 .text-sm {
   font: var(--text-sm);
 }
@@ -116,4 +120,17 @@ main {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+section header {
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.2rem 0;
+  border-top: 0.1rem solid var(--stroke-color);
+  color: var(--text-color-secondary);
+
+  a {
+    display: flex;
+    gap: 0.4rem;
+  }
 }

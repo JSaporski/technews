@@ -1,10 +1,21 @@
 #weekly {
-  header {
-    justify-content: space-between;
+  figure {
+    position: relative;
 
-    a {
-      display: flex;
-      gap: 0.4rem;
+    img {
+      height: 16rem;
+      object-fit: cover;
+      border-radius: 0.4rem;
+    }
+
+    span {
+      position: absolute;
+      top: 0.8rem;
+      left: 0.8rem;
+    }
+
+    p {
+      margin-top: 0.8rem;
     }
   }
 }
