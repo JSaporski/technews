@@ -4,19 +4,53 @@
     'A A B C'
     'A A D E';
 
-  div {
+  .card {
+    align-content: end;
+    position: relative;
+    border-radius: 0.4rem;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background-image: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
+
     img {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 0.4rem;
     }
+
+    figcaption {
+      position: relative;
+      padding: 2.4rem;
+
+      &:has(.text-lg) {
+        padding: 1.2rem;
+      }
+
+      h2 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+    }
   }
 
-  div:first-child {
+  .card:first-child {
     grid-area: A;
+    height: 41.6rem;
   }
 
-  div:nth-child(3) {
+  .card:nth-child(3) {
     grid-area: C;
   }
 }

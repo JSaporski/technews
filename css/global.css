@@ -1,13 +1,11 @@
 :root {
   font-size: 62.5%;
-
   --brand-color-light: hsl(213, 94%, 68%);
   --brand-color-dark: hsl(224, 76%, 48%);
   --bg-color: hsl(222, 47%, 11%);
   --stroke-color: hsl(217, 33%, 17%);
   --text-color-primary: hsl(210, 40%, 96%);
   --text-color-secondary: hsl(213, 27%, 84%);
-
   --font-family: 'Archivo', sans-serif;
   --h1: 800 2.4rem/135% var(--font-family);
   --h2: 800 1.6rem/140% var(--font-family);
@@ -15,6 +13,7 @@
   --text-span: 600 1.4rem/145% var(--font-family);
   --text: 400 1.6rem/140% var(--font-family);
   --text-sm: 400 1.4rem/160% var(--font-family);
+  --text-xsm: 400 1rem/120% var(--font-family);
 }
 
 * {
@@ -70,6 +69,40 @@ h3 {
   grid-auto-flow: column;
 }
 
+.gap-8 {
+  gap: 0.8rem;
+}
+
 .gap-16 {
   gap: 1.6rem;
+}
+
+.text-2xl {
+  font: var(--h1);
+}
+
+.text-xl {
+  font: var(--h2);
+}
+
+.text-lg {
+  font: var(--h3);
+}
+
+.text-sm {
+  font: var(--text-sm);
+}
+
+.text-xsm {
+  font: var(--text-xsm);
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+}
+
+.content-tag {
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--brand-color-dark);
+  border-radius: 0.4rem;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(2, 6, 23, 0.25);
 }
