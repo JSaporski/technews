@@ -1,5 +1,5 @@
 header {
-  margin-bottom: 4rem;
+  margin-bottom: 2.4rem;
 }
 
 #primary {
@@ -26,6 +26,8 @@ header {
   border-block: 0.1rem solid var(--stroke-color);
 
   ul {
+    gap: 4rem;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }

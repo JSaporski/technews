@@ -56,6 +56,7 @@ h3 {
 
 main {
   gap: 8rem;
+  margin-bottom: 8rem;
 }
 
 .container {
@@ -115,16 +116,30 @@ main {
   box-shadow: 0rem 0.4rem 1.6rem rgba(2, 6, 23, 0.25);
 }
 
-.clamped {
+.clamped-2,
+.clamped-3,
+.clamped-4 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+.clamped-2 {
+  -webkit-line-clamp: 2;
+}
+
+.clamped-3 {
+  -webkit-line-clamp: 3;
+}
+
+.clamped-4 {
+  -webkit-line-clamp: 4;
 }
 
 section header {
   align-items: center;
   justify-content: space-between;
+  gap: 4rem;
   padding-block: 1.2rem 0;
   border-top: 0.1rem solid var(--stroke-color);
   color: var(--text-color-secondary);
